@@ -19,7 +19,7 @@
   {
     "repository": "android_packages_resources_devicesettings",
     "target_path": "packages/resources/devicesettings",
-    "branch": "XOS-7.1"
+    "branch": "cm-14.1"
   },
   {
     "repository": "android_vendor_motorola_athene",
