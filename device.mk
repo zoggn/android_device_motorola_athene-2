@@ -107,10 +107,6 @@ PRODUCT_PACKAGES += \
     libbson \
     Snap
 
-# CMActions
-PRODUCT_PACKAGES += \
-    CMActions
-
 # Display
 PRODUCT_PACKAGES += \
     gralloc.msm8952 \
