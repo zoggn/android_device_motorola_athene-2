@@ -178,7 +178,7 @@
     <!-- the 5th element "resore-time" indicates the number of milliseconds to delay
          before automatically restore the default connection.  Set -1 if the connection
          does not require auto-restore. -->
-    <!-- the 6th element indicates boot-time dependency-met value. -->	
+    <!-- the 6th element indicates boot-time dependency-met value. -->
     <string-array name="networkAttributes">
         <item>wifi,1,1,1,-1,true</item>
         <item>mobile,0,0,0,-1,true</item>
@@ -197,7 +197,7 @@
          attributes.  This is used by the connectivity manager to decide which networks can coexist
          based on the hardware -->
     <!-- An Array of "[ConnectivityManager connectionType],
-                      [# simultaneous connection types]"  -->	
+                      [# simultaneous connection types]"  -->
     <string-array name="radioAttributes">
         <item>"1,1"</item>
         <item>"0,1"</item>
@@ -383,5 +383,8 @@
 
     <!-- Determines if Navigation bar (Softkeys) are shown by default or na -->
     <bool name="config_defaultToNavigationBar">true</bool>
+
+    <!-- Determines if device has support for Night Display or na -->
+    <bool name="config_nightDisplayAvailable">true</bool>
 
 </resources>
