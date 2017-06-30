@@ -41,7 +41,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
              String value = Constants.isPreferenceEnabled(context, pref) ? "1" : "0";
              String node = Constants.sBooleanNodePreferenceMap.get(pref);
 
-             if (!FileUtils.writeLine(node, value)) {
+             if (!FileUtils.writeString(node, value)) {
                  Log.w(TAG, "Write to node " + node +
                        " failed while restoring saved preference values");
              }

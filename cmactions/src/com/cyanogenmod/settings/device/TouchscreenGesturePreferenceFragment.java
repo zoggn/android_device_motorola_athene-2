@@ -32,7 +32,7 @@ import android.text.TextUtils;
 import java.io.File;
 
 import org.halogenos.io.FileUtils;
-import com.cyanogenmod.internel.util.ScreenType;
+import org.cyanogenmod.internal.util.ScreenType;
 
 public class TouchscreenGesturePreferenceFragment extends PreferenceFragment {
     private SwitchPreference mFlipPref;
@@ -82,7 +82,7 @@ public class TouchscreenGesturePreferenceFragment extends PreferenceFragment {
                     String node = Constants.sBooleanNodePreferenceMap.get(preference.getKey());
                     if (!TextUtils.isEmpty(node)) {
                         Boolean value = (Boolean) newValue;
-                        FileUtils.writeLine(node, value ? "1" : "0");
+                        FileUtils.writeString(node, value ? "1" : "0");
                         return true;
                     }
                     return false;
@@ -90,7 +90,7 @@ public class TouchscreenGesturePreferenceFragment extends PreferenceFragment {
             });
             String node = Constants.sBooleanNodePreferenceMap.get(pref);
             if (new File(node).exists()) {
-                String curNodeValue = FileUtils.readOneLine(node);
+                String curNodeValue = FileUtils.readString(node);
                 b.setChecked(curNodeValue.equals("1"));
             } else {
                 b.setEnabled(false);

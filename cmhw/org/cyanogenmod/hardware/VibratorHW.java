@@ -50,6 +50,6 @@ public class VibratorHW {
     }
 
     public static boolean setIntensity(int intensity)  {
-        return FileUtils.writeLine(LEVEL_PATH, String.valueOf(intensity));
+        return FileUtils.writeString(LEVEL_PATH, String.valueOf(intensity));
     }
 }

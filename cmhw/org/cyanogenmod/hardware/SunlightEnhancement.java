@@ -16,7 +16,7 @@
 
 package org.cyanogenmod.hardware;
 
-import org.cyanogenmod.internal.util.FileUtils;
+import org.halogenos.io.FileUtils;
 
 import android.util.Log;
 
@@ -61,7 +61,7 @@ public class SunlightEnhancement {
      * failed; true in any other case.
      */
     public static boolean setEnabled(boolean status) {
-        return FileUtils.writeLine(FILE_HBM, status ? "1" : "0");
+        return FileUtils.writeString(FILE_HBM, status ? "1" : "0");
     }
 
     /**
