@@ -15,4 +15,5 @@
 # limitations under the License.
 #
 # Inherit some stuff from here:
+ PRODUCT_MAKEFILES := \
  $(LOCAL_DIR)/fh_athene.mk
