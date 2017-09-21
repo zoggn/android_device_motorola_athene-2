@@ -193,7 +193,3 @@ BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_qcwcn
 WIFI_DRIVER_FW_PATH_AP := "ap"
 WIFI_DRIVER_FW_PATH_STA := "sta"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
-
-# Dexpreopt only releases (halogenOS will autodo the stuff)
-TARGET_FORCE_DEXPREOPT ?= false
-WITH_DEXPREOPT := $(TARGET_FORCE_DEXPREOPT)
