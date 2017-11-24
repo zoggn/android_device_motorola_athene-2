@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Inherit some common CM stuff.
+# Inherit some common AOSP stuff.
 TARGET_ARCH := arm
 TARGET_DENSITY := xxhdpi
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
@@ -23,7 +23,7 @@ $(call inherit-product, device/motorola/athene/full_athene.mk)
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 1920
-TARGET_BOOTANIMATION_HALF_RES := true
+TARGET_BOOT_ANIMATION_RES := 1080
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := athene
