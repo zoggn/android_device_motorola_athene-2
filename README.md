@@ -1,4 +1,4 @@
-Device Tree for Moto G4/G4 Plus (athene)
+TWRP Device Tree for Moto G4/G4 Plus (athene)
 ===========================================
 
 The Moto G4/G4 Plus (codenamed _"athene"_) is a mid-range smartphone from Motorola Mobility.
