@@ -1,5 +1,6 @@
 # Copyright (C) 2015 The CyanogenMod Project
 #           (C) 2017 The LineageOS Project
+#           (C) 2017 The OmniROM Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,14 +14,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Inherit some common Omni stuff.
+# Inherit from Omni custom product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
 
 $(call inherit-product, device/motorola/athene/full_athene.mk)
 
-# Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := athene
+
 PRODUCT_NAME := omni_athene
-PRODUCT_BRAND := Motorola
-PRODUCT_MANUFACTURER := Motorola
-PRODUCT_RELEASE_NAME := athene

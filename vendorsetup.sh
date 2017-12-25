@@ -1,3 +1,1 @@
-add_lunch_combo omni_athene-eng
 add_lunch_combo omni_athene-userdebug
-
