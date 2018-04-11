@@ -224,8 +224,8 @@ LZMA_RAMDISK_TARGETS := recovery
 TARGET_USE_SDCLANG := true
 
 # SELinux
-#include device/qcom/sepolicy/sepolicy.mk
-#BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+include device/qcom/sepolicy/sepolicy.mk
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
